@@ -27,7 +27,7 @@ g: %d
 Public Key (beta): %d
 ''' % (serialNum, payer, payee, amount, p, q, g, beta)
 
-    r, s = DSA.SignGen(transaction, p, q, g, alpha, beta):
+    r, s = DSA.SignGen(transaction, p, q, g, alpha, beta)
     transaction = transaction + '''Signature (r): %d
 Signature (s): %d
 ''' % (r, s)
